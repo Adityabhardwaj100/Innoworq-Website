@@ -1,0 +1,7 @@
+<svg viewBox="0 0 150 30" xmlns="http://www.w3.org/2000/svg" role="img">
+    <title>Check Point</title>
+    <path d="M12 2 L22 7 V14 C22 20 17 25 12 27 C7 25 2 20 2 14 V7 Z" fill="#dc2626" />
+    <circle cx="12" cy="14" r="5" fill="#ffffff" />
+    <circle cx="12" cy="14" r="2.5" fill="#dc2626" />
+    <text x="32" y="21" font-family="'Outfit', 'Inter', sans-serif" font-weight="900" font-size="18" fill="#0c2040" letter-spacing="0.2">Check Point</text>
+  </svg>

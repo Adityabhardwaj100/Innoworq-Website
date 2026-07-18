@@ -1,0 +1,6 @@
+<svg viewBox="0 0 75 30" xmlns="http://www.w3.org/2000/svg" role="img">
+    <title>HP</title>
+    <circle cx="15" cy="15" r="14" fill="#0096D6" />
+    <text x="7" y="21" font-family="'Outfit', 'Inter', sans-serif" font-weight="800" font-size="16" fill="#ffffff" font-style="italic">hp</text>
+    <text x="38" y="21" font-family="'Outfit', 'Inter', sans-serif" font-weight="900" font-size="22" fill="#0096D6">HP</text>
+  </svg>
