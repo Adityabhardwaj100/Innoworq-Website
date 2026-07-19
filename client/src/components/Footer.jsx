@@ -12,13 +12,7 @@ export default function Footer() {
     { name: 'Services', path: '/services' },
     { name: 'Solutions', path: '/solutions' },
     { name: 'Industries', path: '/industries' },
-    { name: 'Blogs', path: '/blogs' },
-    { name: 'Career', path: '/career' }
-  ];
-
-  const regLinks = [
-    { name: 'Partner Registration', path: '/partner-registration' },
-    { name: 'Support Desk', path: '/support-desk' }
+    { name: 'Blogs', path: '/blogs' }
   ];
 
   return (
@@ -54,7 +48,7 @@ export default function Footer() {
             </div>
 
             {/* Quick Sitemap Links */}
-            <div style={{ gridColumn: 'span 3' }} className="footer-col-2">
+            <div style={{ gridColumn: 'span 4' }} className="footer-col-2">
               <h4 style={{ color: 'var(--text-light-primary)', marginBottom: '1.5rem', fontSize: '1.1rem' }}>Sitemap</h4>
               <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
                 {quickLinks.map((link) => (
@@ -72,27 +66,8 @@ export default function Footer() {
               </ul>
             </div>
 
-            {/* Registration & Support Links */}
-            <div style={{ gridColumn: 'span 2' }} className="footer-col-3">
-              <h4 style={{ color: 'var(--text-light-primary)', marginBottom: '1.5rem', fontSize: '1.1rem' }}>Registrations</h4>
-              <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-                {regLinks.map((link) => (
-                  <li key={link.path}>
-                    <Link
-                      to={link.path}
-                      style={{ transition: 'var(--transition-smooth)' }}
-                      onMouseEnter={(e) => e.target.style.color = 'var(--brand-blue)'}
-                      onMouseLeave={(e) => e.target.style.color = 'var(--text-light-secondary)'}
-                    >
-                      {link.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
             {/* Contact Details */}
-            <div style={{ gridColumn: 'span 3' }} className="footer-col-4">
+            <div style={{ gridColumn: 'span 4' }} className="footer-col-4">
               <h4 style={{ color: 'var(--text-light-primary)', marginBottom: '1.5rem', fontSize: '1.1rem' }}>Corporate Office</h4>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                 <div>
@@ -135,8 +110,6 @@ export default function Footer() {
             </p>
           </div>
           <div style={{ display: 'flex', gap: '1.5rem', fontSize: '0.8rem' }}>
-            <Link to="/support-desk" style={{ color: '#64748b' }}>Support Desk</Link>
-            <span style={{ color: '#cbd5e1' }}>|</span>
             <Link to="/services" style={{ color: '#64748b' }}>IT Services Catalog</Link>
           </div>
         </div>
@@ -144,7 +117,7 @@ export default function Footer() {
 
       <style>{`
         @media (max-width: 900px) {
-          .footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4 {
+          .footer-col-1, .footer-col-2, .footer-col-4 {
             grid-column: span 12 !important;
           }
         }

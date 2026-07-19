@@ -169,39 +169,6 @@ export default function Navbar() {
           >
             Blogs
           </Link>
-
-          <Link
-            to="/career"
-            id="nav-link-career"
-            style={{
-              fontFamily: 'var(--font-heading)',
-              fontSize: '0.92rem',
-              fontWeight: 600,
-              color: location.pathname === '/career' ? 'var(--brand-blue)' : '#334155'
-            }}
-          >
-            Career
-          </Link>
-
-          <Link
-            to="/partner-registration"
-            id="nav-link-partner-reg"
-            style={{
-              fontFamily: 'var(--font-heading)',
-              fontSize: '0.92rem',
-              fontWeight: 600,
-              color: location.pathname === '/partner-registration' ? 'var(--brand-blue)' : '#334155'
-            }}
-          >
-            Partner Registration
-          </Link>
-        </div>
-
-        {/* Support Desk Action CTA */}
-        <div className="desktop-cta">
-          <Link to="/support-desk" className="btn btn-primary" id="nav-cta-support" style={{ padding: '0.55rem 1.25rem', fontSize: '0.88rem' }}>
-            Support Desk
-          </Link>
         </div>
 
         {/* Mobile Hamburger Button */}
@@ -293,18 +260,6 @@ export default function Navbar() {
             <Link to="/solutions" onClick={() => setIsOpen(false)} style={{ fontWeight: 600, color: '#334155', padding: '0.25rem 0' }}>Solutions</Link>
             <Link to="/industries" onClick={() => setIsOpen(false)} style={{ fontWeight: 600, color: '#334155', padding: '0.25rem 0' }}>Industries</Link>
             <Link to="/blogs" onClick={() => setIsOpen(false)} style={{ fontWeight: 600, color: '#334155', padding: '0.25rem 0' }}>Blogs</Link>
-            <Link to="/career" onClick={() => setIsOpen(false)} style={{ fontWeight: 600, color: '#334155', padding: '0.25rem 0' }}>Career</Link>
-            <Link to="/partner-registration" onClick={() => setIsOpen(false)} style={{ fontWeight: 600, color: '#334155', padding: '0.25rem 0' }}>Partner Registration</Link>
-
-            <Link
-              to="/support-desk"
-              onClick={() => setIsOpen(false)}
-              className="btn btn-primary"
-              id="nav-cta-support-mobile"
-              style={{ width: '100%', marginTop: '0.5rem' }}
-            >
-              Support Desk
-            </Link>
           </motion.div>
         )}
       </AnimatePresence>
