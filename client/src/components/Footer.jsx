@@ -41,10 +41,7 @@ export default function Footer() {
                   <span key={cert}>🛡️ {cert}</span>
                 ))}
               </div>
-              {/* Social Icons */}
-              <div style={{ display: 'flex', gap: '1rem' }}>
-                <a href={configData.socials.linkedin} target="_blank" rel="noopener noreferrer" style={{ color: '#0077b5', fontSize: '0.88rem', fontWeight: 600 }}>LinkedIn</a>
-              </div>
+
             </div>
 
             {/* Quick Sitemap Links */}
@@ -74,10 +71,7 @@ export default function Footer() {
                   <span style={{ display: 'block', fontSize: '0.8rem', color: '#64748b', textTransform: 'uppercase' }}>Registered Address</span>
                   <span style={{ color: 'var(--text-light-primary)', fontSize: '0.9rem', lineHeight: '1.5', display: 'block', fontWeight: 500 }}>{configData.contact.address}</span>
                 </div>
-                <div>
-                  <span style={{ display: 'block', fontSize: '0.8rem', color: '#64748b', textTransform: 'uppercase' }}>Toll Free</span>
-                  <a href={`tel:${configData.contact.phone}`} style={{ color: 'var(--text-light-primary)', fontWeight: 700 }}>{configData.contact.phone}</a>
-                </div>
+
                 <div>
                   <span style={{ display: 'block', fontSize: '0.8rem', color: '#64748b', textTransform: 'uppercase' }}>Sales &amp; Queries</span>
                   <a href={`mailto:${configData.contact.email}`} style={{ color: 'var(--brand-blue)', fontWeight: 700 }}>{configData.contact.email}</a>
