@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+
 import { motion, useReducedMotion } from 'framer-motion';
 import ScrollReveal from '../components/ScrollReveal';
 

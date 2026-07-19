@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useLocation, Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import { motion, useReducedMotion } from 'framer-motion';
 import ScrollReveal from '../components/ScrollReveal';
 import configData from '../data/companyConfig.json';

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+
 import { motion } from 'framer-motion';
 import ScrollReveal, { StaggerContainer, StaggerItem, CountUp } from '../components/ScrollReveal';
 import configData from '../data/companyConfig.json';
