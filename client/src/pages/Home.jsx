@@ -245,7 +245,7 @@ export default function Home() {
                 style={{ marginTop: '2rem' }}
               >
                 <Link 
-                  to="/support-desk" 
+                  to="/services" 
                   className="btn" 
                   style={{ 
                     padding: '0.9rem 2.2rem', 
@@ -256,22 +256,6 @@ export default function Home() {
                     fontWeight: 700,
                     borderRadius: '6px',
                     boxShadow: '0 4px 20px rgba(0, 240, 255, 0.35)',
-                    transition: 'all 0.3s ease'
-                  }}
-                >
-                  Open Support Ticket
-                </Link>
-                <Link 
-                  to="/services" 
-                  className="btn" 
-                  style={{ 
-                    padding: '0.9rem 2.2rem', 
-                    fontSize: '1rem',
-                    backgroundColor: 'rgba(255, 255, 255, 0.05)',
-                    color: '#ffffff',
-                    border: '1px solid rgba(255, 255, 255, 0.2)',
-                    fontWeight: 600,
-                    borderRadius: '6px',
                     transition: 'all 0.3s ease'
                   }}
                 >
