@@ -764,25 +764,7 @@ export default function Industries() {
                     paddingTop: '1.5rem',
                     marginTop: '1rem'
                   }}>
-                    <Link
-                      to={`/support-desk?sector=${activeSector.id}`}
-                      style={{
-                        display: 'inline-flex', alignItems: 'center', gap: '0.5rem',
-                        padding: '0.75rem 1.5rem',
-                        background: 'rgba(9,97,159,1)',
-                        color: '#fff', borderRadius: '6px',
-                        fontSize: '0.86rem', fontWeight: 700, textDecoration: 'none',
-                        boxShadow: '0 4px 14px rgba(9,97,159,0.3)',
-                        transition: 'all 0.25s ease'
-                      }}
-                      onMouseEnter={(e) => e.target.style.backgroundColor = 'var(--brand-blue-hover)'}
-                      onMouseLeave={(e) => e.target.style.backgroundColor = 'rgba(9,97,159,1)'}
-                    >
-                      Discuss this Sector
-                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-                        <path d="M2 6h8M6.5 2.5l3.5 3.5-3.5 3.5" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </Link>
+
                     <Link
                       to="/services"
                       style={{
