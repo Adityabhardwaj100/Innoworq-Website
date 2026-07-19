@@ -238,30 +238,7 @@ export default function Home() {
                 so you can scale your business.
               </motion.p>
 
-              {/* CTA Buttons */}
-              <motion.div
-                variants={itemVariants}
-                className="hero-buttons-flex"
-                style={{ marginTop: '2rem' }}
-              >
-                <Link 
-                  to="/services" 
-                  className="btn" 
-                  style={{ 
-                    padding: '0.9rem 2.2rem', 
-                    fontSize: '1rem',
-                    backgroundColor: '#00f0ff',
-                    color: '#020617',
-                    border: '1px solid #00f0ff',
-                    fontWeight: 700,
-                    borderRadius: '6px',
-                    boxShadow: '0 4px 20px rgba(0, 240, 255, 0.35)',
-                    transition: 'all 0.3s ease'
-                  }}
-                >
-                  Explore Services Catalog
-                </Link>
-              </motion.div>
+
             </motion.div>
           </div>
 
@@ -591,21 +568,13 @@ export default function Home() {
                   }}>⚙️</div>
                   <h4 style={{ color: 'var(--text-light-primary)', fontSize: '1.1rem', fontWeight: 700 }}>{srv.name}</h4>
                   <p style={{ fontSize: '0.87rem', color: 'var(--text-light-secondary)', lineHeight: '1.65', flexGrow: 1 }}>{srv.desc}</p>
-                  <Link to={`/services#${srv.id}`} style={{ fontSize: '0.85rem', color: 'var(--brand-blue)', fontWeight: 600, display: 'inline-flex', alignItems: 'center', gap: '0.3rem' }}>
-                    Learn more →
-                  </Link>
+
                 </motion.div>
               </StaggerItem>
             ))}
           </StaggerContainer>
 
-          <ScrollReveal variant="fade-up" delay={0.3}>
-            <div style={{ textAlign: 'center', marginTop: '3.5rem' }}>
-              <Link to="/services" className="btn btn-primary" style={{ padding: '0.85rem 2.5rem' }}>
-                View All 11 Services →
-              </Link>
-            </div>
-          </ScrollReveal>
+
         </div>
       </section>
 
@@ -782,20 +751,7 @@ export default function Home() {
               or request active SLA-backed support desk coverage — we have structured channels to review your request.
             </motion.p>
 
-            <motion.div
-              initial={{ opacity: 0, y: 15 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              style={{ display: 'flex', gap: '1.25rem', justifyContent: 'center', flexWrap: 'wrap' }}
-            >
-              <Link to="/support-desk" className="btn" style={{ padding: '0.9rem 2rem', backgroundColor: '#ffffff', color: 'var(--brand-blue)', fontWeight: 700, borderRadius: '6px' }}>
-                🎫 Open Support Ticket
-              </Link>
-              <Link to="/partner-registration" className="btn" style={{ padding: '0.9rem 2rem', backgroundColor: 'transparent', color: '#ffffff', fontWeight: 700, borderRadius: '6px', border: '1px solid rgba(255,255,255,0.4)' }}>
-                🤝 Become a Partner
-              </Link>
-            </motion.div>
+
           </div>
         </section>
       </ScrollReveal>

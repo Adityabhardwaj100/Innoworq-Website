@@ -757,31 +757,7 @@ export default function Industries() {
                   </div>
 
                   {/* Actions Block */}
-                  <div style={{
-                    display: 'flex',
-                    gap: '1rem',
-                    borderTop: '1px solid rgba(255, 255, 255, 0.08)',
-                    paddingTop: '1.5rem',
-                    marginTop: '1rem'
-                  }}>
 
-                    <Link
-                      to="/services"
-                      style={{
-                        display: 'inline-flex', alignItems: 'center', gap: '0.5rem',
-                        padding: '0.75rem 1.5rem',
-                        background: 'transparent',
-                        color: 'rgba(255,255,255,0.85)', borderRadius: '6px',
-                        fontSize: '0.86rem', fontWeight: 700, textDecoration: 'none',
-                        border: '1px solid rgba(255,255,255,0.15)',
-                        transition: 'all 0.25s ease'
-                      }}
-                      onMouseEnter={(e) => e.target.style.borderColor = 'rgba(255,255,255,0.3)'}
-                      onMouseLeave={(e) => e.target.style.borderColor = 'rgba(255,255,255,0.15)'}
-                    >
-                      View Services
-                    </Link>
-                  </div>
                 </motion.div>
               </AnimatePresence>
             </div>
@@ -811,37 +787,7 @@ export default function Industries() {
               Our sector specialists will assess your IT infrastructure demands and
               deliver a tailored SLA architecture roadmap.
             </p>
-            <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-              <Link
-                to="/support-desk"
-                style={{
-                  display: 'inline-flex', alignItems: 'center', gap: '0.5rem',
-                  padding: '0.8rem 1.8rem',
-                  background: 'rgba(9,97,159,1)',
-                  color: '#fff', borderRadius: '8px',
-                  fontSize: '0.9rem', fontWeight: 700, textDecoration: 'none',
-                  boxShadow: '0 4px 16px rgba(9,97,159,0.2)',
-                }}
-              >
-                Request a Sector Assessment
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-                  <path d="M2 7h10M7.5 2.5L12 7l-4.5 4.5" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </Link>
-              <Link
-                to="/services"
-                style={{
-                  display: 'inline-flex', alignItems: 'center', gap: '0.5rem',
-                  padding: '0.8rem 1.8rem',
-                  background: '#ffffff',
-                  color: 'rgba(9,97,159,0.85)', borderRadius: '8px',
-                  fontSize: '0.9rem', fontWeight: 700, textDecoration: 'none',
-                  border: '1px solid rgba(9,97,159,0.25)',
-                }}
-              >
-                Explore Services
-              </Link>
-            </div>
+
           </ScrollReveal>
         </div>
       </section>
@@ -1014,36 +960,7 @@ export default function Industries() {
                 </div>
               </div>
 
-              {/* CTA Action links */}
-              <div style={{ display: 'flex', gap: '1rem', borderTop: '1px solid rgba(255,255,255,0.08)', paddingTop: '1.25rem', marginTop: '1.5rem' }}>
-                <Link
-                  to={`/support-desk?sector=${activeSector.id}`}
-                  style={{
-                    flex: 1,
-                    textAlign: 'center',
-                    padding: '0.75rem 1.2rem',
-                    background: 'rgba(9,97,159,1)',
-                    color: '#fff', borderRadius: '6px',
-                    fontSize: '0.84rem', fontWeight: 700, textDecoration: 'none'
-                  }}
-                >
-                  Discuss Sector
-                </Link>
-                <Link
-                  to="/services"
-                  style={{
-                    flex: 1,
-                    textAlign: 'center',
-                    padding: '0.75rem 1.2rem',
-                    background: 'transparent',
-                    color: 'rgba(255,255,255,0.85)', borderRadius: '6px',
-                    fontSize: '0.84rem', fontWeight: 700, textDecoration: 'none',
-                    border: '1px solid rgba(255,255,255,0.15)'
-                  }}
-                >
-                  View Services
-                </Link>
-              </div>
+
             </motion.div>
           </motion.div>
         )}

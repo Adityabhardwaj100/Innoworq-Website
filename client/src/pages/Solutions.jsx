@@ -372,48 +372,6 @@ function SolutionSection({ sol, index }) {
                 </div>
               </div>
 
-              {/* Action Buttons */}
-              <div style={{ display: 'flex', gap: '1rem' }}>
-                <Link
-                  to={`/support-desk?solution=${sol.id}`}
-                  style={{
-                    display: 'inline-flex',
-                    alignItems: 'center',
-                    gap: '0.5rem',
-                    padding: '0.7rem 1.4rem',
-                    background: 'rgba(9,97,159,1)',
-                    color: '#ffffff',
-                    borderRadius: '6px',
-                    fontSize: '0.85rem',
-                    fontWeight: 700,
-                    textDecoration: 'none',
-                    boxShadow: '0 4px 14px rgba(9,97,159,0.18)'
-                  }}
-                >
-                  Discuss this Solution
-                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                    <path d="M2.5 6H9.5M6 2.5L9.5 6L6 9.5" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                </Link>
-                <Link
-                  to="/support-desk"
-                  style={{
-                    display: 'inline-flex',
-                    alignItems: 'center',
-                    gap: '0.5rem',
-                    padding: '0.7rem 1.4rem',
-                    background: '#ffffff',
-                    color: 'rgba(9,97,159,0.85)',
-                    border: '1px solid rgba(9,97,159,0.2)',
-                    borderRadius: '6px',
-                    fontSize: '0.85rem',
-                    fontWeight: 700,
-                    textDecoration: 'none'
-                  }}
-                >
-                  Technical Inquiry
-                </Link>
-              </div>
             </ScrollReveal>
           </div>
 
@@ -631,56 +589,7 @@ export default function Solutions() {
               Our systems architects design SLA-driven workloads, consolidation roadmaps,
               and security perimeters aligned with global industry regulations.
             </p>
-            <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-              <Link
-                to="/support-desk"
-                className="btn"
-                style={{
-                  padding: '0.85rem 2rem',
-                  background: 'rgba(9,97,159,1)',
-                  color: '#ffffff',
-                  borderRadius: '8px',
-                  fontWeight: 700,
-                  fontSize: '0.9rem',
-                  textDecoration: 'none',
-                  boxShadow: '0 4px 16px rgba(9,97,159,0.2)'
-                }}
-              >
-                Schedule Technical Consultation
-              </Link>
-              <Link
-                to="/support-desk"
-                className="btn"
-                style={{
-                  padding: '0.85rem 2rem',
-                  background: '#ffffff',
-                  color: 'rgba(9,97,159,0.85)',
-                  border: '1px solid rgba(9,97,159,0.25)',
-                  borderRadius: '8px',
-                  fontWeight: 700,
-                  fontSize: '0.9rem',
-                  textDecoration: 'none'
-                }}
-              >
-                Contact Solutions Team
-              </Link>
-              <Link
-                to="/partner-registration"
-                className="btn"
-                style={{
-                  padding: '0.85rem 2rem',
-                  background: 'transparent',
-                  color: 'rgba(9,97,159,0.9)',
-                  border: '1px solid rgba(9,97,159,0.4)',
-                  borderRadius: '8px',
-                  fontWeight: 700,
-                  fontSize: '0.9rem',
-                  textDecoration: 'none'
-                }}
-              >
-                Become a Partner
-              </Link>
-            </div>
+
           </ScrollReveal>
         </div>
       </section>

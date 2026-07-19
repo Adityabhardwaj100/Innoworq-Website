@@ -172,13 +172,10 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Hamburger Button */}
-        <button
+        <div
           onClick={() => setIsOpen(!isOpen)}
           id="mobile-nav-toggle"
-          aria-label="Toggle navigation menu"
           style={{
-            background: 'none',
-            border: 'none',
             cursor: 'pointer',
             padding: '0.5rem',
             display: 'none',
@@ -190,7 +187,7 @@ export default function Navbar() {
           <span style={{ width: '22px', height: '2px', backgroundColor: '#334155', transition: 'var(--transition-smooth)', transform: isOpen ? 'rotate(45deg) translate(5px, 5px)' : 'none' }}></span>
           <span style={{ width: '22px', height: '2px', backgroundColor: '#334155', transition: 'var(--transition-smooth)', opacity: isOpen ? 0 : 1 }}></span>
           <span style={{ width: '22px', height: '2px', backgroundColor: '#334155', transition: 'var(--transition-smooth)', transform: isOpen ? 'rotate(-45deg) translate(5px, -5px)' : 'none' }}></span>
-        </button>
+        </div>
       </div>
 
       {/* Mobile Drawer */}
@@ -223,7 +220,7 @@ export default function Navbar() {
 
             {/* Mobile Touch-Friendly Services Expandable */}
             <div>
-              <button 
+              <div 
                 onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
                 style={{
                   display: 'flex',
@@ -231,16 +228,15 @@ export default function Navbar() {
                   width: '100%',
                   fontWeight: 600,
                   color: '#334155',
-                  background: 'none',
-                  border: 'none',
                   fontSize: '1rem',
                   padding: '0.25rem 0',
-                  textAlign: 'left'
+                  textAlign: 'left',
+                  cursor: 'pointer'
                 }}
               >
                 Services
                 <span>{isMobileServicesOpen ? '▲' : '▼'}</span>
-              </button>
+              </div>
               {isMobileServicesOpen && (
                 <div style={{ paddingLeft: '1rem', display: 'flex', flexDirection: 'column', gap: '0.75rem', marginTop: '0.5rem' }}>
                   {services.map((srv) => (

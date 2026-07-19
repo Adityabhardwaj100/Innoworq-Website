@@ -170,7 +170,7 @@ export default function Blogs() {
             {CATEGORIES.map((cat) => {
               const isActive = activeCategory === cat;
               return (
-                <button
+                <span
                   key={cat}
                   onClick={() => setActiveCategory(cat)}
                   style={{
@@ -184,10 +184,9 @@ export default function Blogs() {
                     cursor: 'pointer',
                     transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)',
                   }}
-                  className="cat-btn"
                 >
                   {cat}
-                </button>
+                </span>
               );
             })}
           </div>
@@ -205,7 +204,11 @@ export default function Blogs() {
                   {renderBlogImage(featuredArticle, { height: '100%', objectFit: 'cover' })}
                 </div>
                 
-                <div className="featured-content">
+                <div 
+                  className="featured-content" 
+                  onClick={() => setSelectedArticle(featuredArticle)}
+                  style={{ cursor: 'pointer' }}
+                >
                   <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', marginBottom: '1.25rem' }}>
                     <span className="badge-tag">{featuredArticle.category}</span>
                     <span style={{ fontSize: '0.82rem', color: '#64748b', fontWeight: 600 }}>{featuredArticle.date}</span>
@@ -235,7 +238,7 @@ export default function Blogs() {
                     {featuredArticle.summary}
                   </p>
 
-                  <div className="author-meta-row" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '2.5rem' }}>
+                  <div className="author-meta-row" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
                     <div style={{ 
                       width: '38px', height: '38px', 
                       borderRadius: '50%', backgroundColor: '#09619f', 
@@ -250,14 +253,6 @@ export default function Blogs() {
                       <div style={{ fontSize: '0.78rem', color: '#64748b', fontWeight: 500 }}>Technical Leadership</div>
                     </div>
                   </div>
-
-                  <button 
-                    onClick={() => setSelectedArticle(featuredArticle)}
-                    className="btn btn-primary"
-                    style={{ padding: '0.85rem 2rem', width: 'fit-content' }}
-                  >
-                    Read Featured Insight →
-                  </button>
                 </div>
               </div>
             </section>
@@ -361,13 +356,12 @@ export default function Blogs() {
               {/* Close bar */}
               <div className="modal-header">
                 <span className="badge-tag">{selectedArticle.category}</span>
-                <button 
+                <span 
                   onClick={() => setSelectedArticle(null)}
-                  className="modal-close-btn"
-                  aria-label="Close reader"
+                  style={{ cursor: 'pointer', fontSize: '0.85rem', fontWeight: 600, color: '#64748b' }}
                 >
                   ✕ Close
-                </button>
+                </span>
               </div>
 
               {/* Scrollable content container */}
